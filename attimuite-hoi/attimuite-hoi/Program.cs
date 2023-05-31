@@ -25,7 +25,7 @@ public class Player
 
 public class Game
 {
-    private Player player1;
+    private Player player1;　
     private Player player2;
 
     public Game()
@@ -38,14 +38,14 @@ public class Game
     {
         while (true)
         {
-            player1.SelectedHand = GetPlayerHand("プレイヤー1");
+            player1.SelectedHand = GetPlayerHand("プレイヤー1"); 
             player2.SelectedHand = GetPlayerHand("プレイヤー2");
             Console.WriteLine("プレイヤー1の選択: " + player1.SelectedHand);
             Console.WriteLine("プレイヤー2の選択: " + player2.SelectedHand);
             if(player1.SelectedHand == player2.SelectedHand)
             {
                 Console.WriteLine("あいこ！もういちど");
-                continue;
+                continue; // あいこの場合もう一度実行する
             }
             break;
         }
